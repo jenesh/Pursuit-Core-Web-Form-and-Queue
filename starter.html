@@ -1,14 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <script src="enableDOMQueue.js"></script>
   <title>Pizza Order</title>
 </head>
-<body>
-  <img src="https://images.vexels.com/media/users/3/131778/isolated/lists/2f58b79f41ddd2cf40e188c533a7f751-pizza-logo-template.png" alt="pizza logo" />
-  <h1>Pizza Ordering App</h1> 
 
-  
+<body>
+  <img
+    src="https://images.vexels.com/media/users/3/131778/isolated/lists/2f58b79f41ddd2cf40e188c533a7f751-pizza-logo-template.png"
+    alt="pizza logo" />
+  <h1>Pizza Ordering App</h1>
+
+
+  <form action="#" id="form">
+    <h2>Customer Info</h2>
+    
+    <label for="first-name">First name:</label>
+    <input type="text" name="form" id="first-name">
+    <label for="last-name">Last name:</label>
+    <input type="text" name="form" id="last-name">
+    <label for="address">Address:</label>
+    <input type="text" name="form" id="address">
+
+
+    <h2>Build Your Pizza</h2>
+
+    <label class="label-bold">Pie Size:</label>
+    <input type="radio" name="form" id="small" value="Small">
+    <label for="small">Small</label>
+    <input type="radio" name="form" id="medium" value="Medium">
+    <label for="medium">Medium</label>
+    <input type="radio" name="form" id="large" value="Large">
+    <label for="large">Large</label>
+
+
+    <br>
+
+    <label class="label-bold" for="crust">Crust:</label>
+    <select name="form" id="crust">
+      <option value="Thin">Thin</option>
+      <option value="Thick">Thick</option>
+    </select>
+
+    <br>
+
+    <label class="label-bold" for="toppings">Toppings:</label>
+    <input type="checkbox" name="form" value="1" id="anchovies">
+    <label for="anchovies">Anchovies</label>
+    <input type="checkbox" name="form" value="2" id="ham">
+    <label for="ham">Ham</label>
+    <input type="checkbox" name="form" value="3" id="pepperoni">
+    <label for="pepperoni">Pepperoni</label>
+    <input type="checkbox" name="form" value="4" id="sausage">
+    <label for="sausage">Sausage</label>
+    <input type="checkbox" name="form" value="5" id="broccoli">
+    <label for="broccoli">Broccoli</label>
+    <input type="checkbox" name="form" value="6" id="green-olives">
+    <label for="green-olives">Green Olives</label>
+    <input type="checkbox" name="form" value="7" id="mushrooms">
+    <label for="mushrooms">Mushrooms</label>
+    <input type="checkbox" name="form" value="8" id="roasted-garlic">
+    <label for="roasted-garlic">Roasted Garlic</label>
+
+    <br>
+
+    <label class="label-bold" for="instructions">Special Instructions:</label>
+    <br>
+
+    <textarea name="form" id="instructions" cols="30" rows="3"
+      placeholder="Write special instructions here..."></textarea>
+  </form>
+  <button id="enqueue_btn">Enqueue</button>
+
   <hr>
   <div>
     <h2>Orders</h2>
@@ -16,4 +80,5 @@
     <button id="dequeue_btn">Dequeue</button>
   </div>
 </body>
+
 </html>

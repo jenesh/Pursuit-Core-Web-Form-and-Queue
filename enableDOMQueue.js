@@ -6,7 +6,12 @@ const enableDOMQueue = (queue) => {
   queue.enqueue = (value) => {
     originalEnqueue.call(queue, value);
     let li = document.createElement("li");
-    let { crust, size, topping, special_instructions } = value
+    let {
+      crust,
+      size,
+      topping,
+      special_instructions
+    } = value
     li.innerText = `${size}, ${crust}, ${topping}, ${special_instructions}`
     list.appendChild(li)
   }
@@ -17,3 +22,13 @@ const enableDOMQueue = (queue) => {
     list.removeChild(firstChild)
   }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const enqueueBtn = document.querySelector('#enqueue_btn');
+
+  enqueueBtn.addEventListener('click', () => {
+    const 
+
+
+  })
+})
